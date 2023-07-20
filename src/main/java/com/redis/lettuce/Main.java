@@ -34,6 +34,9 @@ public class Main {
 
       syncCommands.set("my_key", "Hi, there Redis!");
 
+      String result = syncCommands.get("my_key");
+      System.out.println("👍🏾 It worked, the value of 'my_key' is: " + result);
+
       connection.close();
       redisClient.shutdown();
     }

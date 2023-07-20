@@ -9,6 +9,18 @@ redis.password=XXXXXXXXXXXXXXXX
 redis.username=default
 ```
 
+Build JAR with: 
+
+```
+mvn clean compile assembly:single  
+```
+
+Run JAR with:
+
+```
+java -jar target/lettuce-example-1.0-SNAPSHOT-jar-with-dependencies.jar
+```
+
 ### Testing Against Local Redis Stack
 
 ```
